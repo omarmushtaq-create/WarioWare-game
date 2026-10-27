@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://wxjjtmd01w6u"]
+
+[ext_resource type="Script" uid="uid://ck5abgtn2krf1" path="res://scripts/player.gd" id="1_bms3g"]
+[ext_resource type="Texture2D" uid="uid://whlvifnklawj" path="res://assets/barioware-player.png" id="2_me0cc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pcxl6"]
+radius = 97.0
+height = 466.0
+
+[node name="Node2D" type="CharacterBody2D" unique_id=1521518640]
+script = ExtResource("1_bms3g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=340095834]
+texture = ExtResource("2_me0cc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=666558473]
+position = Vector2(3, 25)
+shape = SubResource("CapsuleShape2D_pcxl6")

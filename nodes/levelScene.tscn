@@ -1,3 +1,69 @@
 [gd_scene format=3 uid="uid://crxs35k1xsmnx"]
 
+[ext_resource type="Texture2D" uid="uid://cjscneysx0yce" path="res://assets/barioware-background.png" id="1_dp7fi"]
+[ext_resource type="Script" uid="uid://c3wleuwdj255b" path="res://scripts/level_scene.gd" id="1_xnix2"]
+[ext_resource type="Texture2D" uid="uid://bqsbdgngt0xdd" path="res://assets/Garlic.png" id="2_xnix2"]
+
 [node name="Node2D" type="Node2D" unique_id=1426444555]
+position = Vector2(1, 0)
+script = ExtResource("1_xnix2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1169609646]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_dp7fi")
+
+[node name="Garlic Container" type="HBoxContainer" parent="." unique_id=500573636]
+offset_left = 221.0
+offset_top = 128.0
+offset_right = 20717.0
+offset_bottom = 4224.0
+scale = Vector2(0.034612685, 0.034612685)
+
+[node name="Garlic" type="TextureRect" parent="Garlic Container" unique_id=84195681]
+layout_mode = 2
+texture = ExtResource("2_xnix2")
+
+[node name="Garlic2" type="TextureRect" parent="Garlic Container" unique_id=1483730463]
+layout_mode = 2
+texture = ExtResource("2_xnix2")
+
+[node name="Garlic3" type="TextureRect" parent="Garlic Container" unique_id=28235152]
+layout_mode = 2
+texture = ExtResource("2_xnix2")
+
+[node name="Garlic4" type="TextureRect" parent="Garlic Container" unique_id=10433133]
+layout_mode = 2
+texture = ExtResource("2_xnix2")
+
+[node name="Garlic5" type="TextureRect" parent="Garlic Container" unique_id=1241747306]
+layout_mode = 2
+texture = ExtResource("2_xnix2")
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=776205032]
+offset_left = 527.00006
+offset_top = 527.0
+offset_right = 598.6687
+offset_bottom = 577.01337
+scale = Vector2(1.9394798, 1.9394798)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0
+"
+scroll_active = false
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=462397083]
+offset_left = 452.0
+offset_top = 307.0
+offset_right = 609.25867
+offset_bottom = 362.16943
+scale = Vector2(1.9394798, 1.9394798)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #
+"
+scroll_active = false
